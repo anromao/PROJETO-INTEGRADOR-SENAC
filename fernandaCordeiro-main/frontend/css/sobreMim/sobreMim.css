@@ -1,0 +1,45 @@
+.sobreBg {
+    background-color: var(--p4);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.secaoSobreMim {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.sobreImagem {
+    display: flex;
+    align-items: center;
+}
+
+.secaoSobreMim img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+    object-position: 50% 40%;
+}
+
+.sobreConteudo {
+    max-width: 960px;
+    padding: 2em 3em 2em 3em;
+}
+
+@media (max-width: 800px) {
+    .secaoSobreMim {
+        grid-template-columns: 1fr;
+    }
+
+    .sobreImagem {
+        padding-left: 4em;
+    }
+
+    .secaoSobreMim img {
+        max-height: 200px;
+    }
+}
